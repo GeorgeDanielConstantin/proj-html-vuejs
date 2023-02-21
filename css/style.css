@@ -8,6 +8,26 @@
   --yellow: #ffcc01;
 }
 
+small {
+  color: var(--brown);
+}
+
+.dog-logo-right {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 210px;
+  width: 200px;
+}
+
+.dog-logo-left {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 165px;
+  width: 150px;
+}
+
 /* HEADER */
 
 header {
@@ -66,10 +86,38 @@ header {
   position: absolute;
   top: 20%;
 }
-.dog-logo-right {
-  position: absolute;
-  right: 0;
-  top: 10%;
-  height: 210px;
-  width: 200px;
+
+/* SERVICE */
+
+.service {
+  background-color: var(--whitegrey);
+  position: relative;
+}
+
+.card {
+  background-color: var(--orange);
+  height: 35vh;
+  color: var(--white);
+  border-top-left-radius: 8rem 10rem;
+  border-top-right-radius: 8rem 10rem;
+  border-bottom-left-radius: 8rem 10rem;
+  border-bottom-right-radius: 8rem 10rem;
+}
+
+.card img {
+  height: 10vh;
+  object-fit: contain;
+}
+
+.btn-right img {
+  height: 4vh;
+  width: 4vh;
+  padding: 0.5rem;
+  background-color: var(--yellow);
+  border-radius: 45%;
+  object-fit: contain;
+}
+
+.card:hover {
+  background-color: var(--brown);
 }
