@@ -43,10 +43,33 @@ header {
   border: none;
 }
 
-.play {
+.jumbotron img {
   padding: 0.5rem;
   height: 40px;
   width: 40px;
   background-color: #72d0fa;
   border-radius: 0.5rem;
+}
+
+/* ABOUT US */
+
+.about-us {
+  height: 70vh;
+  position: relative;
+}
+
+.about-us .col-5 {
+  position: relative;
+}
+
+.col-5 > .row {
+  position: absolute;
+  top: 20%;
+}
+.dog-logo-right {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 210px;
+  width: 200px;
 }
