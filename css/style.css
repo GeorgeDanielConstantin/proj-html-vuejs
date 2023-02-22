@@ -121,3 +121,39 @@ header {
 .card:hover {
   background-color: var(--brown);
 }
+
+/* CHOOSE US */
+
+.choose-us-box {
+  height: 130px;
+}
+
+.choose-us-box img {
+  height: 130px;
+  width: 130px;
+  display: inline-block;
+}
+
+.choose-us-text {
+  display: inline-block;
+}
+
+.first-badge {
+  width: 45vw;
+}
+
+.second-badge {
+  width: 35vw;
+}
+
+.third-badge {
+  width: 25vw;
+}
+
+#second {
+  margin-left: 10vw;
+}
+
+#third {
+  margin-left: 20vw;
+}
