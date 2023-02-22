@@ -375,17 +375,57 @@
             </div>
           </div>
         </div>
-        <div class="container my-3">
-          <div class="row row-cols-5">
+        <div class="container my-5">
+          <div class="row row-cols-5 gx-1">
             <div class="col d-flex">
               <div>
                 <h4><b>Get in Touch</b></h4>
+                <p>Have a Question for us? We'll answer your problem here</p>
+                <div class="logos d-flex">
+                  <div v-for="logo in logos">
+                    <img :src="logo" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col">
+              <h4><b>Support</b></h4>
+              <ul>
+                <li v-for="support in supports">
+                  <a href="#">{{support}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4><b>About</b></h4>
+              <ul>
+                <li v-for="about in abouts"><a href="">{{about}}</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4><b>Faq</b></h4>
+              <ul>
+                <li v-for="faq in faqs">
+                  <a href="">{{faq}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4><b>Contact me</b></h4>
+              <ul>
+                <li>
+                  <span><i class="fa-solid fa-location-arrow"></i></span>
+                  <a href="#"
+                    >4500 Mercantile plaza, suite 300, fort worth, TX, 76137,
+                    USA</a
+                  >
+                </li>
+                <li v-for="contact in contacts">
+                  <span>{{contact.icon}}</span>
+                  <a class="mx-2" href="#">{{contact.info}}</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
