@@ -34,8 +34,48 @@ header {
   background-color: var(--brown);
 }
 
+.up-header i {
+  color: var(--orange);
+}
+
+.up-header a {
+  color: var(--white);
+}
+
+.logos img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
 .navbar {
   background-color: var(--white);
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+}
+#nav-link {
+  color: var(--grey);
+}
+
+#nav-link:hover {
+  color: var(--orange);
+}
+
+.btn-git {
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+}
+
+.btn-git:hover {
+  background-color: var(--blue);
 }
 
 /* JUMBOTRON */
@@ -207,8 +247,16 @@ header {
   left: 1200px;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: black;
+  height: 600px;
+  margin-top: 200px;
+}
+
 .newsletter-box .col-10 {
-  margin-top: 100px;
+  margin-top: -100px;
   height: 200px;
   background-color: var(--orange);
   border-radius: 1rem;
@@ -244,4 +292,8 @@ header {
 
 .newsletter-sub .input-group {
   width: 400px;
+}
+
+footer h4 {
+  color: var(--orange);
 }

@@ -37,312 +37,358 @@
   </head>
   <body>
     <!-- HEADER -->
-
-    <header>
-      <div></div>
-      <nav class="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <div>
-            <ul class="navbar-nav me-auto mb-2">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- JUMBOTRON -->
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-7">
-            <h2><b>Welcome to</b> DogMilo <b>Pets</b></h2>
-            <p class="my-4">
-              Lorem ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <button type="button" class="btn-gs">Get started</button>
-            <img class="mx-1" src="img/play.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT US -->
-
-    <section class="about-us">
-      <div class="container">
-        <div class="row my-5 align-content-center">
-          <div class="col-6">
-            <img src="img/about.png" alt="" />
-          </div>
-          <div class="col-5">
-            <div class="row">
-              <div class="col">
-                <img class="mx-1 p-1" src="img/dog-icon.png" alt="" />
-                <span><small>About us</small></span>
-                <h3 class="my-5"><b>Welcome DogMilo Pets</b></h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  vero dolor accusamus, sint eum iusto officia omnis sed atque
-                  veritatis dolorum illo ea facere totam repellat in molestias
-                  ad, animi et molestiae impedit nihil odio.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Reprehenderit labore totam saepe consectetur harum voluptatem
-                  incidunt voluptatibus magnam unde assumenda hic beatae
-                  repudiandae eaque laudantium veniam modi blanditiis ad minus
-                  voluptate, fugit obcaecati sequi voluptates.
-                </p>
+    <div id="app">
+      <header>
+        <div class="up-header">
+          <div class="container">
+            <div class="d-flex p-2 justify-content-between">
+              <div class="d-flex justify-content-start">
+                <div class="d-flex" v-for="contact in contacts">
+                  <span>{{contact.icon}}</span>
+                  <a class="nav-link active mx-1" href="#">{{contact.info}}</a>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img class="dog-logo-right" src="img/dog-logo.png" alt="" />
-    </section>
-
-    <!-- SERVICE -->
-
-    <section class="service">
-      <div class="container py-2 text-center">
-        <p class="pt-3"><small>Service</small></p>
-        <h4><b>DogMilo Pet Care Services</b></h4>
-        <h4><b> For your Best Friends.</b></h4>
-
-        <div class="row row-cols-5 my-5">
-          <div class="col text-center">
-            <div class="card py-3">
-              <img src="img/d-1.png" class="card-img-top p-2" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Per Sitting</h5>
-                <p class="card-text my-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                  rerum.
-                </p>
-                <a href="#" class="btn-right">
-                  <img class="my-3" src="img/right.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col text-center">
-            <div class="card py-3">
-              <img src="img/d-2.png" class="card-img-top p-2" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Per Sitting</h5>
-                <p class="card-text my-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                  rerum.
-                </p>
-                <a href="#" class="btn-right">
-                  <img class="my-3" src="img/right.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col text-center">
-            <div class="card py-3">
-              <img src="img/d-3.png" class="card-img-top p-2" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Per Sitting</h5>
-                <p class="card-text my-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                  rerum.
-                </p>
-                <a href="#" class="btn-right">
-                  <img class="my-3" src="img/right.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col text-center">
-            <div class="card py-3">
-              <img src="img/d-4.png" class="card-img-top p-2" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Per Sitting</h5>
-                <p class="card-text my-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                  rerum.
-                </p>
-                <a href="#" class="btn-right">
-                  <img class="my-3" src="img/right.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col text-center">
-            <div class="card py-3">
-              <img src="img/d-5.png" class="card-img-top p-2" alt="" />
-              <div class="card-body">
-                <h5 class="card-title">Per Sitting</h5>
-                <p class="card-text my-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                  rerum.
-                </p>
-                <a href="#" class="btn-right">
-                  <img class="my-3" src="img/right.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="img/dog-logo.png" alt="" class="dog-logo-right" />
-      <img src="img/dog-left.png" alt="" class="dog-logo-left" />
-    </section>
-
-    <!-- CHOOSE US -->
-
-    <section class="choose-us d-flex">
-      <div>
-        <img class="choose-us-img mb-5" src="img/why.png" alt="" />
-      </div>
-      <div class="choose-us-info p-5 m-3">
-        <img class="mx-1" src="img/dog-icon.png" alt="" />
-        <span><small>Choose Us</small></span>
-        <h3 class="my-5"><b>Why Choose Us?</b></h3>
-        <div>
-          <div class="choose-us-box">
-            <img src="img/w-3.png" alt="" />
-            <div class="choose-us-text first-badge mx-4">
-              <h5><b>Safety First</b></h5>
-              <p class="text-wrap">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                natus vel voluptatum temporibus ratione. Odio fugiat nobis
-                nostrum aliquam a!
-              </p>
-            </div>
-          </div>
-          <div class="choose-us-box" id="second">
-            <img src="img/w-2.png" alt="" />
-            <div class="choose-us-text second-badge mx-4">
-              <h5><b>Play Yards</b></h5>
-              <p class="text-wrap">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                natus vel voluptatum temporibus ratione. Odio fugiat nobis
-                nostrum aliquam a!
-              </p>
-            </div>
-          </div>
-          <div class="choose-us-box" id="third">
-            <img src="img/w-1.png" alt="" />
-            <div class="choose-us-text third-badge mx-4">
-              <h5><b>Monitor your pets</b></h5>
-              <p class="text-wrap">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                natus vel voluptatum temporibus ratione. Odio fugiat nobis
-                nostrum aliquam a!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEW & RATING -->
-
-    <section class="review-rating my-5 p-2">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-3 p-4">
-            <img class="dog-icon mx-1" src="img/dog-icon.png" alt="" />
-            <span><small>Review & Rating</small></span>
-            <h3 class="my-4"><b>Over 8000 Customers With 5-star Review</b></h3>
-            <p class="my-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              numquam quod praesentium maxime necessitatibus earum.
-            </p>
-            <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="col-3 p-4 review-box">
-            <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h5 class="my-4"><b>Great Place</b></h5>
-            <p class="my-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
-              eum, dolorum ea officia voluptatum minus quaerat aliquid officiis
-              ipsam earum.
-            </p>
-            <img src="img/t1.png" alt="" />
-            <figure>
-              <blockquote class="blockquote">
-                <h6><b>Tobias May</b></h6>
-              </blockquote>
-              <figcaption class="blockquote-footer">UI/UX Designer</figcaption>
-            </figure>
-          </div>
-          <div class="col-3 p-4 review-box">
-            <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h5 class="my-4"><b>Great Place</b></h5>
-            <p class="my-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
-              eum, dolorum ea officia voluptatum minus quaerat aliquid officiis
-              ipsam earum.
-            </p>
-            <img src="img/t1.png" alt="" />
-            <figure>
-              <blockquote class="blockquote">
-                <h6><b>Tobias May</b></h6>
-              </blockquote>
-              <figcaption class="blockquote-footer">UI/UX Designer</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="my-3 arrows">
-          <button type="button">
-            <img src="img/left-arrow.png" alt="" />
-          </button>
-          <button type="button">
-            <img src="img/next.png" alt="" />
-          </button>
-        </div>
-        <div class="newsletter-box">
-          <div class="row">
-            <div class="col-10 offset-1">
-              <img src="img/news.png" alt="" />
-              <div class="newsletter-sub">
-                <h5><b>Subscribe to Our Newsletter</b></h5>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="autoSizingInputGroup"
-                    placeholder="Your Email Here"
-                  />
-                  <div class="at-sub"><i class="fa-solid fa-at mt-2"></i></div>
+              <div class="logos d-flex justify-content-end">
+                <div class="d-flex" v-for="logo in logos">
+                  <img :src="logo" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <nav class="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img :src="brand" alt="" />
+            </a>
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item" v-for="link in links">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  id="nav-link"
+                >
+                  {{link}}
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="btn-git">Get in Toch!</button>
+          </div>
+        </nav>
+      </header>
+      <!-- JUMBOTRON -->
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-7">
+              <h2><b>Welcome to</b> DogMilo <b>Pets</b></h2>
+              <p class="my-4">
+                Lorem ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <button type="button" class="btn-gs">Get started</button>
+              <img class="mx-1" src="img/play.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer></footer>
+      <!-- ABOUT US -->
+
+      <section class="about-us">
+        <div class="container">
+          <div class="row my-5 align-content-center">
+            <div class="col-6">
+              <img src="img/about.png" alt="" />
+            </div>
+            <div class="col-5">
+              <div class="row">
+                <div class="col">
+                  <img class="mx-1 p-1" src="img/dog-icon.png" alt="" />
+                  <span><small>About us</small></span>
+                  <h3 class="my-5"><b>Welcome DogMilo Pets</b></h3>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aut vero dolor accusamus, sint eum iusto officia omnis sed
+                    atque veritatis dolorum illo ea facere totam repellat in
+                    molestias ad, animi et molestiae impedit nihil odio.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Reprehenderit labore totam saepe consectetur harum
+                    voluptatem incidunt voluptatibus magnam unde assumenda hic
+                    beatae repudiandae eaque laudantium veniam modi blanditiis
+                    ad minus voluptate, fugit obcaecati sequi voluptates.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="dog-logo-right" src="img/dog-logo.png" alt="" />
+      </section>
+
+      <!-- SERVICE -->
+
+      <section class="service">
+        <div class="container py-2 text-center">
+          <p class="pt-3"><small>Service</small></p>
+          <h4><b>DogMilo Pet Care Services</b></h4>
+          <h4><b> For your Best Friends.</b></h4>
+
+          <div class="row row-cols-5 my-5">
+            <div class="col text-center">
+              <div class="card py-3">
+                <img src="img/d-1.png" class="card-img-top p-2" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title">Per Sitting</h5>
+                  <p class="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis, rerum.
+                  </p>
+                  <a href="#" class="btn-right">
+                    <img class="my-3" src="img/right.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card py-3">
+                <img src="img/d-2.png" class="card-img-top p-2" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title">Per Sitting</h5>
+                  <p class="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis, rerum.
+                  </p>
+                  <a href="#" class="btn-right">
+                    <img class="my-3" src="img/right.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card py-3">
+                <img src="img/d-3.png" class="card-img-top p-2" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title">Per Sitting</h5>
+                  <p class="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis, rerum.
+                  </p>
+                  <a href="#" class="btn-right">
+                    <img class="my-3" src="img/right.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card py-3">
+                <img src="img/d-4.png" class="card-img-top p-2" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title">Per Sitting</h5>
+                  <p class="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis, rerum.
+                  </p>
+                  <a href="#" class="btn-right">
+                    <img class="my-3" src="img/right.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col text-center">
+              <div class="card py-3">
+                <img src="img/d-5.png" class="card-img-top p-2" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title">Per Sitting</h5>
+                  <p class="card-text my-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quis, rerum.
+                  </p>
+                  <a href="#" class="btn-right">
+                    <img class="my-3" src="img/right.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/dog-logo.png" alt="" class="dog-logo-right" />
+        <img src="img/dog-left.png" alt="" class="dog-logo-left" />
+      </section>
+
+      <!-- CHOOSE US -->
+
+      <section class="choose-us d-flex">
+        <div>
+          <img class="choose-us-img mb-5" src="img/why.png" alt="" />
+        </div>
+        <div class="choose-us-info p-5 m-3">
+          <img class="mx-1" src="img/dog-icon.png" alt="" />
+          <span><small>Choose Us</small></span>
+          <h3 class="my-5"><b>Why Choose Us?</b></h3>
+          <div>
+            <div class="choose-us-box">
+              <img src="img/w-3.png" alt="" />
+              <div class="choose-us-text first-badge mx-4">
+                <h5><b>Safety First</b></h5>
+                <p class="text-wrap">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem natus vel voluptatum temporibus ratione. Odio fugiat
+                  nobis nostrum aliquam a!
+                </p>
+              </div>
+            </div>
+            <div class="choose-us-box" id="second">
+              <img src="img/w-2.png" alt="" />
+              <div class="choose-us-text second-badge mx-4">
+                <h5><b>Play Yards</b></h5>
+                <p class="text-wrap">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem natus vel voluptatum temporibus ratione. Odio fugiat
+                  nobis nostrum aliquam a!
+                </p>
+              </div>
+            </div>
+            <div class="choose-us-box" id="third">
+              <img src="img/w-1.png" alt="" />
+              <div class="choose-us-text third-badge mx-4">
+                <h5><b>Monitor your pets</b></h5>
+                <p class="text-wrap">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem natus vel voluptatum temporibus ratione. Odio fugiat
+                  nobis nostrum aliquam a!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEW & RATING -->
+
+      <section class="review-rating my-5 p-2">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-3 p-4">
+              <img class="dog-icon mx-1" src="img/dog-icon.png" alt="" />
+              <span><small>Review & Rating</small></span>
+              <h3 class="my-4">
+                <b>Over 8000 Customers With 5-star Review</b>
+              </h3>
+              <p class="my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis numquam quod praesentium maxime necessitatibus earum.
+              </p>
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="col-3 p-4 review-box">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="my-4"><b>Great Place</b></h5>
+              <p class="my-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                eum, dolorum ea officia voluptatum minus quaerat aliquid
+                officiis ipsam earum.
+              </p>
+              <img src="img/t1.png" alt="" />
+              <figure>
+                <blockquote class="blockquote">
+                  <h6><b>Tobias May</b></h6>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  UI/UX Designer
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-3 p-4 review-box">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="my-4"><b>Great Place</b></h5>
+              <p class="my-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+                eum, dolorum ea officia voluptatum minus quaerat aliquid
+                officiis ipsam earum.
+              </p>
+              <img src="img/t1.png" alt="" />
+              <figure>
+                <blockquote class="blockquote">
+                  <h6><b>Tobias May</b></h6>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  UI/UX Designer
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="my-3 arrows">
+            <button type="button">
+              <img src="img/left-arrow.png" alt="" />
+            </button>
+            <button type="button">
+              <img src="img/next.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="newsletter-box">
+            <div class="row">
+              <div class="col-10 offset-1">
+                <img src="img/news.png" alt="" />
+                <div class="newsletter-sub">
+                  <h5><b>Subscribe to Our Newsletter</b></h5>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="autoSizingInputGroup"
+                      placeholder="Your Email Here"
+                    />
+                    <div class="at-sub">
+                      <i class="fa-solid fa-at mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container my-3">
+          <div class="row row-cols-5">
+            <div class="col d-flex">
+              <div>
+                <h4><b>Get in Touch</b></h4>
+              </div>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
